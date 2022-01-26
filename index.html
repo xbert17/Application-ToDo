@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <title>Todo.js</title>
+        <link rel="stylesheet" href="app-todo.css">
+    </head>
+
+    <body>
+        <main id="app">
+            <header>
+                <h1>ToDo planner app</h1>
+            </header>
+
+            <filter id = "filter">
+                <input id="add-input-filter" type="text" placeholder="Filter your tasks">
+            </filter>
+
+            <ul id="todo-list">
+                <li class="todo-item">
+                    <input class="checkbox" type="checkbox">
+                    <label class="title">finish app</label>
+                    <input class="textfield" type="text">
+                    <label2 class="date">2022-23-01</label2>
+                    <input class="textfield2" type="text">
+
+                    <label3 class="hour">23:59</label3>
+                    <input class="textfield3" type="text">
+
+                    <label4 class="comment">defence 28.1</label4>
+                    <input class="textfield4" type="text">
+
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                </li>
+            </ul>
+
+            <form id="todo-form">
+                <input id="add-input" type="text" placeholder="Type your task">
+                <input id="add-input-date" type="date">
+                <input id="add-input-hour" type="time">
+                <input id="add-input-comment" type="text" placeholder="Type your comment">
+                <button id="add-button" type="submit">Add</button>
+            </form>
+        </main>
+        <button id="give-cat">I need a cat!</button>
+        <div id="cat-pic"/>
+        <br>
+
+        <script src="app-todo.js"></script>
+        <script defer src="cat.js" charset="utf-8"></script>
+        
+    </body>
+</html>

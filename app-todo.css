@@ -1,0 +1,224 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: 0 0;
+    border: none;
+    color: #757575;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    cursor: pointer;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: rgba(158,158,158,.2);
+}
+
+#add-button:hover {
+    background-color: rgba(161, 159, 159, 0.541);
+    color: black;
+}
+
+input {
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: 1rem;
+    color: #757575;
+    padding: .5em;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+}
+
+main {
+    background: whitesmoke;
+    width: 1200px;
+    margin: 70px auto;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    color: white;
+    background-color: rgba(228, 167, 98);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    display: inline-block;
+    color: black;
+    margin: 1rem auto;
+}
+
+.todo-item {
+    display: flex;
+    font-size: 1rem;
+    border-top: 1px solid rgba(0,0,0,.1);
+    background-color: #fff;
+    transition: all .2s;
+    padding: 1em;
+    align-items: center;
+}
+
+.todo-item.completed * {
+    color: lightgray;
+}
+
+.todo-item .checkbox {
+    margin-right: .5rem;
+}
+
+.todo-item .title{
+    width: 500px;
+}
+
+.todo-item .date{
+    width: 120px;
+}
+
+.todo-item .hour{
+    width: 80px;
+}
+
+.todo-item .comment{
+    width: 500px;
+}
+
+.todo-item.completed .title {
+    text-decoration: line-through;
+}
+
+.todo-item.editing .title {
+    display: none;
+}
+
+.todo-item .textfield {
+    display: none;
+}
+
+.todo-item.editing .textfield {
+    display: block;
+}
+
+.todo-item.completed .date {
+    text-decoration: line-through;
+}
+
+.todo-item.editing .date {
+    display: none;
+}
+
+.todo-item .textfield2 {
+    display: none;
+}
+
+.todo-item.editing .textfield2 {
+    display: block;
+}
+
+.todo-item.completed .hour {
+    text-decoration: line-through;
+}
+
+.todo-item.editing .hour {
+    display: none;
+}
+
+.todo-item .textfield3 {
+    display: none;
+}
+
+.todo-item.editing .textfield3 {
+    display: block;
+}
+
+.todo-item.completed .comment {
+    text-decoration: line-through;
+}
+
+.todo-item.editing .comment {
+    display: none;
+}
+
+.todo-item .textfield4 {
+    display: none;
+}
+
+.todo-item.editing .textfield4 {
+    display: block;
+}
+
+.todo-item button {
+    opacity: 0;
+    transition: all .2s;
+}
+
+.todo-item:hover button:not(.checkbox) {
+    opacity: 1;
+}
+
+#todo-form {
+    display: flex;
+    background-color: rgb(228, 167, 98);
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+#todo-form input {
+    flex: 1;
+    transition: all .2s;
+}
+
+#todo-form button {
+    margin-left: 10px;
+}
+
+#give-cat {
+    display: block;
+    margin: 0 auto;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto;
+}
+
+#filter {
+    display: flex;
+    background-color: #FAFAFA;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+#filter  input {
+    flex: 1;
+    outline: none;
+    transition: all .2s;
+}
